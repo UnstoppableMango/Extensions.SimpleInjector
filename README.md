@@ -1,6 +1,6 @@
 # UnMango Simple Injector Extensions
 
-[![Build status](https://unstoppablemango.visualstudio.com/UnMango/_apis/build/status/UnMango.Extensions.SimpleInjector-CI)](https://unstoppablemango.visualstudio.com/UnMango/_build/latest?definitionId=30)
+[![Build status](https://unstoppablemango.visualstudio.com/UnMango/_apis/build/repos/git/badge?branchName=master&api-version=4.1-preview.1)](https://unstoppablemango.visualstudio.com/UnMango/_build/latest?definitionId=30)
 
 This is a repository for extension methods I have written for the SimpleInjector DI container.
 
