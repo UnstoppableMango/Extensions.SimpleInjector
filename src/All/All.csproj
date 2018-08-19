@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>UnMango.Extensions.SimpleInjector</RootNamespace>
+    <AssemblyName>UnMango.Extensions.SimpleInjector.All</AssemblyName>
+    <Authors>UnstoppableMango</Authors>
+    <Company>UnMango</Company>
+    <PackageProjectUrl>https://github.com/UnstoppableMango/Extensions.SimpleInjector</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/UnstoppableMango/Extensions.SimpleInjector</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>English (United States)</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Base\Behaviours\LargestResolvableConstructorBehaviour.cs" Link="Behaviours\LargestResolvableConstructorBehaviour.cs" />
+    <Compile Include="..\Base\ContainerExtensions.cs" Link="ContainerExtensions.cs" />
+    <Compile Include="..\Base\ContainerOptionsExtensions.cs" Link="ContainerOptionsExtensions.cs" />
+    <Compile Include="..\Base\ContainerServiceCollectionExtensions.cs" Link="ContainerServiceCollectionExtensions.cs" />
+    <Compile Include="..\Base\TryRegisterContainerCollectionExtensions.cs" Link="TryRegisterContainerCollectionExtensions.cs" />
+    <Compile Include="..\Base\TryRegisterContainerExtensions.cs" Link="TryRegisterContainerExtensions.cs" />
+    <Compile Include="..\Base\TryRegisterSingletonExtensions.cs" Link="TryRegisterSingletonExtensions.cs" />
+    <Compile Include="..\Caching.Memory\ContainerExtensions.cs" Link="Caching.Memory\ContainerExtensions.cs" />
+    <Compile Include="..\EntityFrameworkCore\ContainerExtensions.cs" Link="EntityFrameworkCore\ContainerExtensions.cs" />
+    <Compile Include="..\Logging\ContainerExtensions.cs" Link="Logging\ContainerExtensions.cs" />
+    <Compile Include="..\Logging\DefaultLoggerLevelConfigureOptions.cs" Link="Logging\DefaultLoggerLevelConfigureOptions.cs" />
+    <Compile Include="..\Logging\LoggingBuilder.cs" Link="Logging\LoggingBuilder.cs" />
+    <Compile Include="..\Options\ConfigurationContainerExtensions.cs" Link="Options\ConfigurationContainerExtensions.cs" />
+    <Compile Include="..\Options\ContainerExtensions.cs" Link="Options\ContainerExtensions.cs" />
+    <Compile Include="..\Options\Internal\InternalOptionsBuilder.cs" Link="Options\Internal\InternalOptionsBuilder.cs" />
+    <Compile Include="..\Options\Options.cs" Link="Options\Options.cs" />
+    <Compile Include="..\Options\Properties\Resources.Designer.cs" Link="Options\Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Options\Properties\Resources.resx" Link="Options\Properties\Resources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.1.1" />
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Behaviours\" />
+    <Folder Include="EntityFrameworkCore\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Caching.Memory\" />
+    <Folder Include="Options\Internal\" />
+    <Folder Include="Options\Properties\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <Import Project="..\Shared\Shared.projitems" Label="Shared" />
+
+</Project>
